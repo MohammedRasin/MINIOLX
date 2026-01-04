@@ -65,11 +65,9 @@ const ProductList = () => {
             onClick={() => setFilter({ category: [], title: '' })}
             className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
           >
-            Clear 1
+            Clear
           </button>
-          <button onClick={() => navigate('/add')}>
-            <i class="fa-solid fa-plus" style="color: #FFD43B;"></i> Add Product
-          </button>
+          <button onClick={() => navigate('/add')}>Add Product</button>
         </div>
       </div>
 

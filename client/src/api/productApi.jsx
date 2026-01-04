@@ -1,12 +1,7 @@
 import api from './axios';
 
-// export const fetchProducts = async () => {
-//   const res = await api.get('/products');
-//   return res.data.products;
-// };
-
 export const fetchProductById = async id => {
-  const res = await api.get(`/products/${id}`);
+  const res = await api.get(`/api/products/${id}`);
   return res.data.product;
 };
 
@@ -16,6 +11,6 @@ export const fetchProducts = async (filter = {}) => {
   );
 
   const params = new URLSearchParams(cleanedFilter).toString();
-  const res = await api.get(`/products?${params}`);
+  const res = await api.get(`/api/products?${params}`);
   return res.data.products;
 };

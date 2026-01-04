@@ -67,8 +67,8 @@ const ProductList = () => {
           >
             Clear
           </button>
+          <button onClick={() => navigate('/add')}>ADD PRODUCT</button>
         </div>
-        <button onClick={() => navigate('/add')}>ADD PRODUCT</button>
       </div>
 
       {products && products.length === 0 ? (

@@ -4,6 +4,7 @@ import Login from './pages/Login.jsx';
 import ProductList from './pages/ProductList.jsx';
 import Register from './pages/Register.jsx';
 import ProductDetail from './pages/productDetail.jsx';
+import AddProduct from './pages/AddProduct.jsx';
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/products" element={<ProductList />} />
         <Route path="/products/:id" element={<ProductDetail />} />
+        <Route path="/add" element={<AddProduct />} />
       </Routes>
     </>
   );

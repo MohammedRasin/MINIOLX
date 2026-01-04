@@ -14,3 +14,7 @@ export const fetchProducts = async (filter = {}) => {
   const res = await api.get(`/api/products?${params}`);
   return res.data.products;
 };
+export const createProduct = async data => {
+  const res = await api.post('/api/products', data);
+  return res.data;
+};

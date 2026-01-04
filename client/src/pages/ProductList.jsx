@@ -68,6 +68,7 @@ const ProductList = () => {
             Clear
           </button>
         </div>
+        <button onClick={() => navigate('/add')}>ADD PRODUCT</button>
       </div>
 
       {products && products.length === 0 ? (

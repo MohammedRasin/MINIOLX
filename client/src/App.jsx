@@ -5,6 +5,7 @@ import ProductList from './pages/ProductList.jsx';
 import Register from './pages/Register.jsx';
 import ProductDetail from './pages/productDetail.jsx';
 import AddProduct from './pages/AddProduct.jsx';
+
 function App() {
   return (
     <>

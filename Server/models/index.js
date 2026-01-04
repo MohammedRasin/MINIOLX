@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/miniolxDB').then(() => {
+mongoose.connect(process.env.MONGO_URI).then(() => {
   try {
     console.log('Connected to MongoDB');
   } catch (error) {

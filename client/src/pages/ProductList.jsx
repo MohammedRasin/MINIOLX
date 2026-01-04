@@ -67,7 +67,9 @@ const ProductList = () => {
           >
             Clear 1
           </button>
-          <button onClick={() => navigate('/add')}>ADD PRODUCT</button>
+          <button onClick={() => navigate('/add')}>
+            <i class="fa-solid fa-plus" style="color: #FFD43B;"></i> Add Product
+          </button>
         </div>
       </div>
 

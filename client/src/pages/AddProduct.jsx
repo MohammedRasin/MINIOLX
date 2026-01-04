@@ -23,7 +23,7 @@ const AddProduct = () => {
     onSuccess: () => {
       message.success('Product added successfully');
       queryClient.invalidateQueries(['products']);
-      navigate('/');
+      navigate('/products');
     },
     onError: err => {
       message.error(err.response?.data?.message || 'Failed to add product');
